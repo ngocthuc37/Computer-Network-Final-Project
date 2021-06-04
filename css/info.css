@@ -1,0 +1,45 @@
+* {
+box-sizing: border-box;
+    }
+body {
+margin: 0;
+}
+body {
+padding-top: 20px;
+padding-bottom: 20px;
+background-image: url("image/background.jpg");
+background-size: cover;
+color : aqua;
+}
+/* Định dạng header */
+.header {
+  padding: 10px;
+
+}
+
+/* Tạo ba cột bằng nhau, float cạnh nhau */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear float khác sau các cột */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình
+có chiều rộng dưới 600px */
+  @media screen and (max-width:600px) {
+    .column {
+    width: 100%;
+  }
+}
+img {
+border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+}
